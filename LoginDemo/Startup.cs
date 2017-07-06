@@ -55,8 +55,9 @@ namespace LoginDemo
                 app.UseDeveloperExceptionPage();
             }
 
+            // app.UseIdentity() 要在 app.UseMvc() 之前。
+            app.UseIdentity();
             app.UseMvc(ConfigureRoute);
-
 
             app.Run(async (context) =>
             {

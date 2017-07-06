@@ -34,7 +34,7 @@ namespace LoginDemo.Controllers
                     Password, false, false);
                 if (result.Succeeded)
                 {
-                    return Redirect("LoginOK");
+                    return View("LoginOK");
                 }
             }
 
